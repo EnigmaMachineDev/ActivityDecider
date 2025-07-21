@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const activityNameElement = document.getElementById('activity-name');
     const activityLinkElement = document.getElementById('activity-link');
+    const personalityLinkElement = document.getElementById('personality-link');
     const randomizeButton = document.getElementById('randomize-button');
 
     let activities = [];
@@ -19,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
             activityNameElement.textContent = activity.name;
             activityLinkElement.href = activity.link;
             activityLinkElement.textContent = `Go to ${activity.name} randomizer`;
+
+            if (activity.name !== 'Artwork') {
+                personalityLinkElement.href = 'https://enigmamachinedev.github.io/CharacterPersonalityRandomizer.github.io/';
+                personalityLinkElement.textContent = 'Character Personality Randomizer';
+                personalityLinkElement.style.display = 'block';
+            } else {
+                personalityLinkElement.style.display = 'none';
+            }
         }
     }
 

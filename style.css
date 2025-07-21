@@ -5,8 +5,45 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #1a1a1a;
+    color: #00ff7f;
 }
 
 .container {
     text-align: center;
+    border: 2px solid #00ff7f;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #2a2a2a;
+}
+
+h1 {
+    color: #00ff7f;
+}
+
+#activity-link, #personality-link {
+    color: #90ee90;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+#activity-link:hover {
+    text-decoration: underline;
+}
+
+#randomize-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00ff7f;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#randomize-button:hover {
+    background-color: #00cc66;
 }
