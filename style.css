@@ -28,7 +28,7 @@ h1 {
     margin-top: 10px;
 }
 
-#activity-link:hover {
+#activity-link:hover, #personality-link:hover {
     text-decoration: underline;
 }
 
