@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             activityLinkElement.textContent = `Go to ${activity.name} randomizer`;
 
             if (activity.name !== 'Artwork') {
-                personalityLinkElement.href = 'https://enigmamachinedev.github.io/CharacterPersonalityRandomizer.github.io/';
+                personalityLinkElement.href = 'https://characterpersonalityrandomizer.github.io/';
                 personalityLinkElement.textContent = 'Character Personality Randomizer';
                 personalityLinkElement.style.display = 'block';
             } else {
