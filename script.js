@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             activityLinkElement.href = activity.link;
             activityLinkElement.textContent = `Go to ${activity.name} randomizer`;
 
-            if (activity.name !== 'Artwork') {
+            if (activity.name !== 'Artwork' || activity.name !== 'Brewing' || activity.name !== 'Reading') {
                 personalityLinkElement.href = 'https://characterpersonalityrandomizer.github.io/';
                 personalityLinkElement.textContent = 'Character Personality Randomizer';
                 personalityLinkElement.style.display = 'block';
